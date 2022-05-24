@@ -1,11 +1,10 @@
-/**
- * @param {number[]} nums
- * @return {number[]}
- */
-var buildArray = function(nums) {
-    let ans = Array(nums.length).fill(0)
-    for (let i = 0; i < nums.length; i++) {
-        ans[i] = nums[nums[i]]
+class Solution {
+public:
+    vector<int> buildArray(vector<int>& nums) {
+        vector<int> ans(nums.size(), 0);
+        for (int i = 0; i < nums.size(); i++) {
+            ans[i] = nums[nums[i]];
+        }
+        return ans;
     }
-    return ans
 };
