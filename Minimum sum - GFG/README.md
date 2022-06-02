@@ -1,5 +1,5 @@
 # Minimum sum
-## Medium 
+##  Medium 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given an array Arr&nbsp;of size N such that each element is from the range&nbsp;0 to 9. Find the minimum possible sum of two numbers formed using the&nbsp;elements&nbsp;of the array. All digits in the given array must be used to form the two numbers.</span></p>
 
