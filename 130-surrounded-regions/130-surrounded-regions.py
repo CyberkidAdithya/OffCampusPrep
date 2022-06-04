@@ -1,6 +1,6 @@
 class Solution:
     # def numIslands(self, grid: List[List[str]]) -> int:
-#     def uniquePathsIII(self, grid: List[List[int]]) -> int:
+    # def uniquePathsIII(self, grid: List[List[int]]) -> int:
     def solve(self, grid: List[List[str]]) -> None:
         self.ans = 0
         m = len(grid)
@@ -67,7 +67,6 @@ class Solution:
                 if i == 0 or i == m - 1 or j == 0 or j == n - 1:
                     if grid[i][j] == "O":
                         dfs3(i, j)
-                        # islandcount += 1
         for i in range(m):
             for j in range(n):
                 if grid[i][j] == "O":
@@ -79,4 +78,3 @@ class Solution:
 
         # return self.ans
         # return islandcount
-        
