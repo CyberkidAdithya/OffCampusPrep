@@ -6,23 +6,21 @@ class Solution:
                 return 0
             if y < 0 or y >= n:
                 return 0
+            if grid2[x][y] == 0:
+                return 0
             return 1
         def fill(x, y):
             if check(x, y) == 0:
                 return 1
             if grid2[x][y] == 1 and grid1[x][y] == 0:
                 return 0
-            if grid2[x][y] == 0:
-                return 1
             grid2[x][y] = 0
             res = fill(x + 1, y) & fill(x - 1, y) & fill(x, y + 1) & fill(x, y - 1)
-            print("res: ", res)
             return res
         
         ans = 0
         for i in range(m):
             for j in range(n):
                 if grid1[i][j] == 1 and grid2[i][j] == 1:
-                    # ans += 1
                     ans += fill(i, j) > 0
         return ans
