@@ -7,7 +7,6 @@ class Solution:
         presum = [0,]
         for i in range(1, n + 1):
             presum.append(presum[-1] + nums[i - 1])
-            # print(presum[i])
             if presum[i] == k:
                 ans += 1
             if hp[presum[i] - k] > 0:
